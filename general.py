@@ -27,14 +27,6 @@ def write_file(path, data):
     except:
         print("Couldnt open file: ", path)
 
-'''def append_to_file(path,data):
-    with open(path, 'a') as f:
-        f.write(data + '\n')
-
-def delete_file_contents(path):
-    with open(path, 'w'):
-        pass'''
-
 #Check requirements
 def check_installations():
 
@@ -67,17 +59,3 @@ def check_installations():
             else:
                 print("Option not contemplated, please try again using 'y/yes | n/no'.")
                 return 0
-
-
-'''def wake_up_server():
-    try:
-        #Tenemos que tener la web clonada para poder hacer esto, idealmente llamaríamos a una función que nos clone la web que vamos a levantar ya sea amazon, bbva, etc.
-        os.system("cd ~/home/vulkan/Escritorio/server/www.bbva.es")
-        os.system("python -m SimpleHTTPServer 1337")
-    except:
-        print("Error couldnt launch server or find the web to launch")'''
-
-
-'''def check_binary():
-    #Aquí checkeamos si podemos acceder al binario dependiendo de si lo queremos enviar por e-mail o subirlo al directorio donde tenemos la página
-'''
