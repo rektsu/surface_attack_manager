@@ -16,12 +16,6 @@ TAM = 0.10
 SERVER = 'http://192.168.1.196'
 PORT = '2337'
 
-#Program have different options:
-#1. Get info from a company (DNS and blocks for Zmap)
-#2. Get Credentials from those DNS TODO pwndb down
-#3. Send a massive phising email from those extracted credentials with a malware TODO malware
-#4. Levantar el servidor + el malware
-
 class VulkaN:
 
     def __init__(self, victim, num_domains, generate_files, deploy_white_lists, whois):
@@ -81,21 +75,6 @@ class VulkaN:
 
         self.domains_list.extend(sorted(dns_dictionary.items(), key=lambda x: x[1], reverse=True))
 
-        '''Esto ya no hace falta que devuelva nada, lo guardamos en el self.domains_list'''
-        #return sorted(dns_dictionary.items(), key=lambda x: x[1], reverse=True)
-
-    '''def white_lists_scanning(self):
-
-        if self.generate_files:
-            try:
-                with open(self.victim + '/white_lists.txt', 'r') as f:
-                    print(f.readline().replace('.html', ''))
-
-            except:
-                print('Failed opening white lists file', sys.exc_info()[0], 'occurred')
-        else:
-            print(self.white_lists_list.replace('.html', ''))'''
-
 
     #No se puede implementar hasta que vaya pwndb -> Multiprocessing y guardar en credentials.txt
     def extract_credentials(self):
@@ -147,33 +126,8 @@ class VulkaN:
             except:
                 print('Failed creating folders', sys.exc_info()[0], "occurred")
 
-
-    '''def print_info(self): #La lista de credenciales puede ser muy larga
-        try:
-            print("Top 5 dns: ", self.domains_list[:self.num_domains])
-            print("Credentials: ", self.credentials_list)
-            print("White lists: ", self.white_lists_list)
-        except:
-            print("Error printing info")'''
-
     def __str__(self):
         try:
             return self.domains_list[:self.num_domains].__str__() + self.credentials_list.__str__() +  self.white_lists_list.__str__()
         except TypeError:
             return 1
-
-    '''def __hash__(self):
-        return self.__str__().__hash__()'''
-
-
-
-'''nerea = VulkaN('bbva', 5, True, True)
-nerea.extract_info()'''
-#bicho.white_lists_scanning()
-#bicho.send_phising_mail()
-'''bicho.extract_dns()
-bicho.extract_credentials()'''
-'''get_dns = bicho.extract_dns()
-bicho.save_info()
-bicho.print_info()'''
-'''print(get_dns[:5])'''
