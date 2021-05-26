@@ -38,17 +38,7 @@ if __name__ == '__main__':
     print("Enviado correo masivo a las credenciales extraidas")
     nerea.wake_up_server()
 
-    '''for i in range(args.domains):
-        whois = whois_files.get_whois(args.victim, i)
-        whois_file = args.victim + '/whois_file_' + str(i) + '.txt'
 
-        if not os.path.isfile(whois_file):
-            try:
-                with open(whois_file, 'w') as f:
-                    f.write(str(whois))
-
-            except:
-                print("Couldnt open file: ", whois_file)'''
 
     for i in range(args.domains):
         whois = whois_files.get_whois(args.victim, i)
@@ -68,11 +58,3 @@ if __name__ == '__main__':
                     print(r.read())
             except FileNotFoundError as error:
                 print('Error file not found: ', error)
-
-
-
-
-    #nerea.white_lists_scanning()
-    '''if args.lists:
-        nerea.white_lists_scanning()'''
-    #print(nerea)
