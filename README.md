@@ -6,7 +6,7 @@ PoC of a web scrapping based tool that provides bunch of information from an org
 git clone https://github.com/steelXz/surface_attack_manager.git
 
 # Example of use
-Being in the same directory you've cloned the repository, access surface:attack_manager: ../../../surface_attack_manager
+Being in the same directory you've cloned the repository, access surface_attack_manager: ../../../surface_attack_manager
 
 python3 main.py -h
 ![image](https://user-images.githubusercontent.com/15212130/119590174-8bbbf700-bdd4-11eb-8f70-07fcd4817748.png)
