@@ -6,7 +6,7 @@ PoC of a web scrapping based tool that provides bunch of information from an org
 
 # Purpose on a red team exercise
 
-The idea of this tool is to use pwndb with the 5 most used domains from an organization and get lists of users and its passwords to perform a credential stuffing or a password spraying attack to the organization
+The idea of this tool is to scrap the N (user input) most used domains from an organization and then to get lists of users and its passwords to perform a credential stuffing or a password spraying attack to the organization
 
 # Installation
 git clone https://github.com/steelXz/surface_attack_manager.git
