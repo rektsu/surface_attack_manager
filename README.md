@@ -1,8 +1,10 @@
 # PROJECT WORK IN PROGRESS
 # IPV4INFO SHUTTED DOWN
 
-# surface_attack_manager
+# surface attack manager
 PoC of a web scrapping based tool that provides bunch of information from an organization by scraping http://ipv4info.com, retrieving most used domains, white lists from an organization and runing a whois scan type in those domains retrieved.
+
+# Purpose on a red team exercise
 
 The idea of this tool is to use pwndb with the 5 most used domains from an organization and get lists of users and its passwords to perform a credential stuffing or a password spraying attack to the organization
 
