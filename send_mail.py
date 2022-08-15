@@ -2,8 +2,8 @@ import smtplib, ssl
 
 def send_mail(receiver, msg):
 
-    sender_email = "vulkanciberproject@gmail.com"
-    password = "vulkanciberproject1337"
+    sender_email = ""
+    password = ""
     port = 465
 
     # Create a secure SSL context
