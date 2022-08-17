@@ -9,7 +9,7 @@ PoC of a web scrapping based tool that provides bunch of information from an org
 The idea of this tool is to scrap the N (user input) most used domains from an organization, run pwndb on those domains to get filtered credentials. Then perform a credential stuffing or a password spraying attack to the organization
 
 # Installation
-git clone https://github.com/steelXz/surface_attack_manager.git
+git clone https://github.com/rektsu/surface_attack_manager.git
 
 # Example of use
 Being in the same directory you've cloned the repository, access surface_attack_manager: ../../../surface_attack_manager
